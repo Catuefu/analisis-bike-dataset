@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 @st.cache_data
 def load_data():
-    file_path = "data_df.csv" 
+    file_path = "dashboard/data_df.csv" 
     df = pd.read_csv(file_path)
     df['dteday'] = pd.to_datetime(df['dteday'])
     return df
